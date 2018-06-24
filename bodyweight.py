@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-def bmi_category(bmi):
+def BMI_category(bmi):
     if bmi < 18.5:
         return 'Underweight'
     elif bmi < 25:
@@ -11,7 +11,7 @@ def bmi_category(bmi):
         return 'Obese'
 
 
-def bmi(weight, height, units='imperial', precision=1, return_cat=False):
+def BMI(weight, height, units='imperial', precision=1, return_cat=False):
     if units == 'imperial':
         modifier = 703
     else:
@@ -25,7 +25,7 @@ def bmi(weight, height, units='imperial', precision=1, return_cat=False):
 
 
 def main():
-    print(bmi(272, 74, return_cat=True)) 
+    print(BMI(272, 74, return_cat=True)) 
 
 
 
